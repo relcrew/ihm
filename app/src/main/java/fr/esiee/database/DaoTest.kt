@@ -11,8 +11,8 @@ interface DaoTest {
     @Insert
     suspend fun insertTest(vararg test: Test)
 
-    @Query("SELECT * FROM Test")
-    suspend fun getAllTest(): Array<Test>
+    @Query("SELECT * FROM tests")
+    suspend fun getAllTest(): List<Test>
 
     @Update
     suspend fun updateTest(vararg test: Test)
